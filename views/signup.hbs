@@ -1,0 +1,27 @@
+{{>header}}
+<main style="width: 40%;">
+    <h1 style="text-align: center;color: white;letter-spacing: 5px;font-size: 10vw;">Signup</h1>
+    <p style="text-align:center; color: red;">{{error}}</p>
+  
+<div class="container">
+    <form action="/signup" method="post">
+        <div class="form-floating mb-3">
+            <input id="floatingInput" style="background-color: rgb(25, 185, 118);" type="email" class="form-control" placeholder="Email address" name="newEmail" >
+            <label style="color: white;" for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input id="floatingPass" style="background-color: rgb(25, 185, 118);" type="password" class="form-control" placeholder="Password..." name="newPass">
+       <label style="color: white;" for="floatingPass">Password</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input  id="floatingPass2" style="background-color: rgb(25, 185, 118);" type="password" class="form-control" placeholder="Password..." name="confirmPass">
+       <label style="color: white;" for="floatingPass2">Confirm password</label>
+        </div>
+        <div class="d-flex justify-content-center">
+
+            <button type="submit" class="btn btn-outline-success" style="background:rgb(25, 185, 118) ; border-color: white;">SignUp</button>
+        </div>
+    </form>
+</div>
+</main>
+{{>footer}}
